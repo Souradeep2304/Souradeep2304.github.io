@@ -1,0 +1,62 @@
+<html>
+<title>Ignite Registration</title>
+
+<style>
+body
+{
+font-style: Bold;
+font-family: Verdana;
+
+}
+img.background {
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+ 
+    filter: blur(5px);
+}
+
+</style>
+<img class="background" src="https://img.collegepravesh.com/2016/02/UPES-Dehradun.jpg" alt="UPES" width="400" height="400">
+<div style="text-align: center"><img src="https://www.upes.ac.in/Uploads/SmallImages/54event_STICK.png" width="200" height=""200" usemap="#image-map"/></div>
+<map name="image-map">
+  <area shape="circle" coords="120,192,951,842" alt="ignite" href="http://ignite.pe.hu/index.php">
+</map>
+<form action="data.php" method="POST">
+<fieldset>
+<legend style="font-family:Arial Black;">Personal Information</legend>
+<body>
+First Name:&nbsp;&nbsp;&nbsp;</style><input type="text" name="firstname" autofocus/><br><br>Last Name:&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="lastname"/><br>
+<br>Gender:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="radio" name="gender" value="male" checked>Male
+                                               <input type="radio" name="gender" value="female"> Female
+                                               <input type="radio" name="gender" value="other"> Other
+<br><br>Date of Birth: <input type="date" name="birthday" min="1965-12-31" max=" max="2007-12-31"><br>
+<br>Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="email" name="email" autocomplete="on"/><br>
+<br>SAP ID:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="SAPID">
+</fieldset><br>
+<fieldset>
+
+<legend style="font-family:Arial Black;">Event Information</legend>
+Event Name:&nbsp;&nbsp; 
+<select name="event">
+ <option style="display:none"></option>
+  <option value="Eggcatcher">Egg catcher</option>
+  <option value="blindcoder">Blind Coder</option>
+  <option value="BridgeTheCannyon">Bridge The Cannyon</option>
+  <option value="TheUnscripted">The Unscripted</option>
+</select> <br><br>
+Team of:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<select name="teamof">
+ <option style="display:none"></option>
+  <option value="one">1</option>
+  <option value="two">2</option>
+  <option value="three">3</option>
+  <option value="four">4</option>
+  <option value="five">5</option>
+</select> <br><br>
+</fieldset><br>
+<input type="submit" value="Submit">&nbsp;&nbsp;<input type="reset">
+</body>
